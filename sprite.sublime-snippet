@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+@import "${1:nome_pasta}/*.png";
+${2:@include all-$1-sprites;}
+${3:// teste}
+
+  ${4:li} {${5: float: left;} width: ${6:20}px; height: ${7:20}px;${8: @extend .rpl;}
+
+    @each \$$1 in ${9:itens separados por vírgulas} {
+      &.#{\$$1} {
+
+        @include $1-sprite(#{\$$1});
+
+      } // &.#{\$$1}
+    } // @each
+
+  } // $4]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>sp</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.scss</scope>
+</snippet>

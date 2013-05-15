@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[@include rpl(${1:20}px, ${2:20}px, '${3:sua-imagem.png}'${4:, block});]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mrp</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.scss</scope>
+</snippet>
